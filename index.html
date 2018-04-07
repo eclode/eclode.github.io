@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116458315-1"></script>
@@ -12,7 +12,7 @@
     </script>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <title>Eclode</title>
 
     <link rel="stylesheet" href="https://use.typekit.net/ttn4ytm.css">
@@ -21,73 +21,149 @@
     <style>
         .home {
             margin: 0;
-            padding-top: 0;
-            font-family: "ff-dagny-web-pro",sans-serif;
-            font-style: normal;
-            color: #707070;
         }
+
         .hero {
             width: 100%;
+            height: 56vw;
 
             display: block;
-            box-sizing: inherit;
             
             padding: 0;
             overflow-x: hidden;
         }
 
-        .grey {
-            background: #F5F5F5;
-        }
-
         .hero img {
             display: block;
-            max-width: 100%;
-            height: auto;
+            width: 60vw;
             border: 0;
-            z-index: -1;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10vw;
         }
 
-        .section {
-            display: block;
-            font-weight: 400;
-            padding: 100px 0;
+        .hero-links {
+            position: absolute;
+            top: 5vw;
+            right: 5vw;
+            text-align: right;
+            display: table;
+        }
+        a {
+            color: #c0281b;
+            text-decoration: none;
         }
 
-        .section h2 {
-            font-size: 33px;
+        .hero-link {
+            margin: 0;
+            font-family: "arno-pro",serif;
+            font-size: 25px;
+        }
+        .hero-link-beneath {
+            margin-top: 7px;
         }
 
-        .thirds {
+        .line {
+            width: 33vw;
+        }
+
+        .about {
             display: flex;
-            justify-content:center;
-            align-content:center;
-            align-items: center;
-            flex-direction:row;
+            flex-direction: row;
+            flex-wrap: nowrap;
         }
-        
-        .wrap {
-            width: 94%;
-            max-width: 970px;
-            margin: 0 auto;
+        .about .left {
+            margin: 18.7vh 0 0 0;
+        }
+        .about .right {
+            margin: 18vh 20vw 15vw 5vw;
+        }
+        .about-text span.title {
+            font-family: "essonnes-headline-i7","essonnes-headline","serif";
+            font-style: italic;
+            font-weight: 700;
+            font-size: 85px;
+            color: #c0281b;
+            margin: 0;
+        }
+        .about-text {
+            line-height: 40px;
+            display: inline-block;
+            margin: 0;
+            font-family: "corporate-s",sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
         }
 
-        .one-third {
-            width: 40%;
+        .images-trio {
+            width: 100vw;
+            height: 40vw;
+        }
+        .images-trio img {
+            width: 100%;
+            height: 100%;
         }
 
-        .two-thirds {
-            width: 60%;
+        .research {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
         }
-
-        .body-text {
-            text-align: center;
+        .right-columns {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
-
-        .research-text {
+        .research .left {
+            margin-top: 19vw;
+        }
+        .research .right {
+            margin: 0;
+            margin-left: 5vw;
+            margin-right: 20vw;
+            margin-top: 11.75vw;
+            display: flex;
+            flex-direction: column;
+        }
+        .research h2 {
+            font-family: "essonnes-headline",serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 15vw;
+            margin: 0;
+        }
+        .research .left-column {
+            width: 27vw;
+        }
+        .research .right-column {
+            width: 27vw;
+            margin-left: 4vw;
+        }
+        .research p {
+            font-family: "corporate-s",sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 40px;
             text-align: left;
-            line-height: 150%;
-            width: 90%;
+        }
+
+        .contact {
+            display: flex;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+            align-items: center;
+        }
+        .contact .left {
+            margin-right: 5vw;
+        }
+        .contact p {
+            margin: 0;
+            font-family: "nimbus-sans-novus",sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 70px;
         }
 
         sup {
@@ -95,41 +171,54 @@
           position: relative;
           top: -0.4em;
         }
-
+        
         .footer {
-            color: #A0A0A0;
+            color: black;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            min-height: 72vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
         }
-
-        .footer a:link {
-            color: #A0A0A0;
+        .footer .left {
+            width: 30vw;
+            text-align: right;
+            margin-left: 10vw;
+            margin-top: 22vh;
         }
-
-        .hero-footer {
-            text-align: center;
-            position: relative;
+        .footer .right {
+            width: 30vw;
+            margin-top: 27vh;
+            margin-left: 7vw;
         }
-
-        .footer-band {
-            text-align: center;
-            position: absolute;
-            width: 100%;
-            bottom: 10px;
+        .footer h2 {
+            font-family: "essonnes-headline",serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 100px;
+            color: white;
+            margin: 0;
         }
-
-        .footer-img {
-            position: relative;
-        }
-
-        a {
-            text-decoration: none;
+        .footer p {
+            margin: 0;
+            font-size: 20px;
+            color: white;
+            font-family: "corporate-s",sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px;
         }
 
         br {
             line-height: 140%;
         }
 
-        p {
-            font-size: 18px;
+        .line {
+            height: 4px;
+            width: 15vw;
         }
 
     </style>
@@ -139,48 +228,97 @@
 <body class="home">
 
     <div class="hero">
-        <img id="hero-img" src="./images/ocean.jpg" alt="abstract beach">
+        <img src="./images/hero_jump.jpg" alt="eclode logotype above a muscular young man jumping">
+        <div class="hero-links">
+            <p class="hero-link"><a href="#about">about</a></p>
+            <p class="hero-link hero-link-beneath"><a href="#research">research</a></p>
+            <p class="hero-link hero-link-beneath"><a href="#contact">contact</a></p>
+        </div>
+        <a id="about"></a>
     </div>
-    <div class="section">
-        <div class="thirds wrap">
-            <h2 class="one-third">About us</h2>
-            <p class="two-thirds body-text">Primum Non Nocere<br/>We are the genetic 99%<br/>We are people, not robots<br/>We have weaknesses<br/>Let’s stop suffering</p>
+
+
+    <div class="about">
+        <div class="left">
+            <img class="line" src="./images/red_line.png" alt="red horizontal line">
+        </div>
+
+        <div class="right">
+            <p class="about-text"><span class="title">Eclode is&nbsp;</span>the next fashion counterstrategy. The body is permitted, for the first time in human history, to truly become a piece of organic machinery, a utility much in the same way as the computer that I write this on. Scale higher mountains. Run faster. Look better naked. Win more fights. Dominate, but also be desired. Don’t die of heart disease like a doofus who works in an office all day. Nothing is in the balance: the code in your cells is enough when tempered by the will of your mind.</p>
         </div>
     </div>
-    <div class="section grey">
-        <div class="wrap">
-            <h2>Research themes</h2>
-            <p class="research-text">Several genetic targets have shown wide efficacy in enhancing the mammalian phenotype.  
-            One example is myostatin knockout, which has been successfully performed in 
-            mice<a href="https://www.ncbi.nlm.nih.gov/pubmed/24675426?dopt=Abstract&holding=npg" target="_blank"><sup>1</sup></a>, 
-            rabbits<a href="https://www.nature.com/articles/srep25029" target="_blank"><sup>2</sup></a>,
-            sheep<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4549068/" target="_blank"><sup>3</sup></a>, 
-            goats<a href="https://www.ncbi.nlm.nih.gov/pubmed/26354037" target="_blank"><sup>4</sup></a>, 
-            pigs<a href="https://www.nature.com/articles/srep08256" target="_blank"><sup>5</sup></a>, 
-            dogs<a href="https://academic.oup.com/jmcb/article/7/6/580/2459501" target="_blank"><sup>6</sup></a>, and 
-            monkeys<a href="https://www.ncbi.nlm.nih.gov/pubmed/26464492" target="_blank"><sup>7</sup></a>.  It’s even been found naturally in 
-            humans<a href="http://www.nejm.org/doi/full/10.1056/NEJMoa040933" target="_blank"><sup>8</sup></a>.  
-            In all of these mammals, myostatin knockout has resulted in greatly increased muscle mass. 
-            <br/>
-            <br/>However, myostatin knockout presents several challenges.  In mice it’s been shown to weaken 
-            tendons<sup><a href="http://www.pnas.org/content/105/1/388" target="_blank">9</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/19591015" target="_blank">10</a></sup>, 
-            decrease exercise 
-            endurance<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2976492/" target="_blank"><sup>11</sup></a>, and may not increase the muscle’s ability to produce force, despite increasing 
-            size<a href="http://www.pnas.org/content/104/6/1835" target="_blank"><sup>12</sup></a>.
-            <br/>Another serious challenge for myostatin knockout is delivery.  
-            A high profile public 
-            announcement<a href="https://www.technologyreview.com/s/542371/a-tale-of-do-it-yourself-gene-therapy/" target="_blank"><sup>13</sup></a> claimed to be the first to successfully inhibit myostatin in people.  
-            However, it’s unlikely that they’ve affected any significant portion of their muscle cells.  In adult mice, 6-8 injections 
-            per limb of AAV-delivered CRISPR myostatin knockout successfully mutated only 5.8% of the targeted muscle 
-            cells<a href="http://www.cell.com/molecular-therapy-family/molecular-therapy/fulltext/S1525-0016(16)45443-2" target="_blank"><sup>14</sup></a>.
-            <br/>
-            <br/>Eclode is bringing to market solutions to problems like these.</p>
+
+    <div class="images-trio">
+        <img src="./images/images_trio.jpg" alt="Greek statute of a man holding his face.">
+    </div>
+
+    <div class="research">
+        <a id="research"></a>
+        <div class="left">
+            <img class="line" src="./images/black_line.png" alt="black horizontal line">
+            <!--<svg height="4px" width="15vw">-->
+              <!--<line x1="0" y1="0" x2="15vw" y2="0" style="stroke:rgb(0,0,0);stroke-width:4" />-->
+            <!--</svg>-->
+        </div>
+        <div class="right">
+            <h2>Research</h2>
+            <div class="right-columns">
+                <div class="left-column">
+                    <p>
+                        Several genetic targets have shown wide efficacy in improving the mammalian phenotype.  
+                        One example is myostatin knockout, which has been successfully performed in 
+                        mice<a href="https://www.ncbi.nlm.nih.gov/pubmed/24675426?dopt=Abstract&holding=npg" target="_blank"><sup>1</sup></a>, 
+                        rabbits<a href="https://www.nature.com/articles/srep25029" target="_blank"><sup>2</sup></a>,
+                        sheep<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4549068/" target="_blank"><sup>3</sup></a>, 
+                        goats<a href="https://www.ncbi.nlm.nih.gov/pubmed/26354037" target="_blank"><sup>4</sup></a>, 
+                        pigs<a href="https://www.nature.com/articles/srep08256" target="_blank"><sup>5</sup></a>, 
+                        dogs<a href="https://academic.oup.com/jmcb/article/7/6/580/2459501" target="_blank"><sup>6</sup></a>, and 
+                        monkeys<a href="https://www.ncbi.nlm.nih.gov/pubmed/26464492" target="_blank"><sup>7</sup></a>.  It’s even been found naturally in 
+                        humans<a href="http://www.nejm.org/doi/full/10.1056/NEJMoa040933" target="_blank"><sup>8</sup></a>.  
+                        In all of these mammals, myostatin knockout has resulted in greatly increased muscle mass. 
+                        <br/>
+                        <br/>However, myostatin knockout presents several challenges.  In mice it’s been shown to weaken 
+                        tendons<sup><a href="http://www.pnas.org/content/105/1/388" target="_blank">9</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/19591015" target="_blank">10</a></sup>, 
+                        decrease exercise 
+                        endurance<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2976492/" target="_blank"><sup>11</sup></a>, and may not increase the muscle’s ability to produce force, despite increasing 
+                        size<a href="http://www.pnas.org/content/104/6/1835" target="_blank"><sup>12</sup></a>.
+                    </p>
+                </div>
+                <div class="right-column">
+                    <p>
+                        Another serious challenge for myostatin knockout is delivery.  
+                        A high profile public 
+                        announcement<a href="https://www.technologyreview.com/s/542371/a-tale-of-do-it-yourself-gene-therapy/" target="_blank"><sup>13</sup></a> claimed to be the first to successfully inhibit myostatin in people.  
+                        However, it’s unlikely that they’ve affected any significant portion of their muscle cells.  In adult mice, 6-8 injections 
+                        per limb of AAV-delivered CRISPR myostatin knockout successfully mutated only 5.8% of the targeted muscle 
+                        cells<a href="http://www.cell.com/molecular-therapy-family/molecular-therapy/fulltext/S1525-0016(16)45443-2" target="_blank"><sup>14</sup></a>.
+                        <br/>
+                        <br/>Eclode is bringing to market solutions to problems like these.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="hero hero-footer">
-        <p class="footer footer-band"><a href="mailto:contact@eclode.bio">contact@eclode.bio</a></p>
-        <img class="footer-img" src="./images/man.jpg" alt="muscular man in shadow">
+
+    <div class="contact">
+        <a id="contact"></a>
+        <div class="left">
+            <img class="line" src="./images/red_line.png" alt="red horizontal line">
+        </div>
+        <div class="right">
+            <p><a href="mailto:xander@eclode.bio">xander@eclode.bio</a></p>
+        </div>
     </div>
+
+    <div class="footer">
+        <div class="left">
+            <h2>I sing the body electric</h2>
+        </div>
+        <div class="right">
+            <p>'And if the body does not do as much as the Soul?<br/> And if the body were not the Soul, what is the Soul?'<br/>– Walt Whitman</p>
+        </div>
+    </div>
+
 </body>
 
 </html>
